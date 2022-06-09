@@ -21,7 +21,7 @@ return (changeString)
 
 def HttpReq(Status,CatchInfo=' '){
     wrap([$class: 'BuildUser']){
-        def DingTalkHook = "钉钉机器人webhook地址"
+        def DingTalkHook = "https://oapi.dingtalk.com/robot/send?access_token=dadc20b97ea9ad879b43dff874dbda003618864bbb3c8b95f08e455369ba1e0f"
         def ChangeLog = getChangeString()
         def ReqBody = """{
             "msgtype": "markdown",
